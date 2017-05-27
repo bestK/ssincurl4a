@@ -34,8 +34,8 @@ import static android.R.attr.path;
 
 public class ListActivity extends AppCompatActivity {
 
-    private final String SS4APACKNAME = "com.github.shadowsocks";
-    private final String SSR4APACKNAME = "in.zhaoj.shadowsocksr";
+    private final String COM_GITHUB_SHADOWSOCKS = "com.github.shadowsocks";
+    private final String IN_ZHAOJ_SHADOWSOCKSR = "in.zhaoj.shadowsocksr";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -63,15 +63,14 @@ public class ListActivity extends AppCompatActivity {
                 copy.setText(lv.getItemAtPosition(position).toString());
 
 
-                if (isAppInstalled(ListActivity.this, SS4APACKNAME)) {
-                    startActivity(getPackageManager().getLaunchIntentForPackage(SS4APACKNAME));
+                if (isAppInstalled(ListActivity.this, COM_GITHUB_SHADOWSOCKS)) {
+                    startActivity(getPackageManager().getLaunchIntentForPackage(COM_GITHUB_SHADOWSOCKS));
                 }
-                if (isAppInstalled(ListActivity.this, SSR4APACKNAME)) {
-                    startActivity(getPackageManager().getLaunchIntentForPackage(SSR4APACKNAME));
+                if (isAppInstalled(ListActivity.this, IN_ZHAOJ_SHADOWSOCKSR)) {
+                    startActivity(getPackageManager().getLaunchIntentForPackage(IN_ZHAOJ_SHADOWSOCKSR));
                 }
 
                 Toast.makeText(getApplicationContext(), R.string.copyTip, Toast.LENGTH_LONG).show();
-
             }
         });
 

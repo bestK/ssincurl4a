@@ -12,4 +12,5 @@
     <string name="imageName">lowid/ss-with-net-speeder:latest</string>
     <string name="progress_dialog">progress_dialog</string>
     <string name="please_wait">please_wait</string>
+    <string name="click_auto">自动导入SS配置</string>
 </resources>
